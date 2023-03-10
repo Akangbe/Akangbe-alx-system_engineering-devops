@@ -1,6 +1,2 @@
 #!/bin/bash
-if [ $(id -u) != $(id -u guillaume) ]; then
-  exit 1
-fi
-chown betty hello
-
+if [ $(id -u guillaume) = $(stat -c %u hello) ]; then chown betty hello; fi
