@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o posix # ensures that all variables are output as if they were declared with the export keyword
+
+echo "Functions:"
+declare -F
+
+echo "Local variables:"
+declare -p
+
+echo "Environment variables:"
+env
