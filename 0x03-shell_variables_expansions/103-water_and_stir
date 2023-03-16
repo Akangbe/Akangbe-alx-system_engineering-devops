@@ -1,4 +1,2 @@
-$ export WATER="ewwatratewa"
-$ export STIR="ti.itirtrtr"
-$ ./103-water_and_stir
-The result in base bestchol is: shtbeolhc
+#!/bin/bash
+echo "$(echo "ibase=water;$WATER" | bc) + $(echo "ibase=stir;$STIR" | bc)" | bc -q | tr '[:digit:]' 'bestchol'
